@@ -1,0 +1,76 @@
+body {
+  background-color: rgb(235, 235, 235);
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  width: 400px;
+  padding: 20px 20px;
+  background-color: white;
+}
+
+.border {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+.logo-wrapper {
+  padding: 30px;
+
+  margin-bottom: 30px;
+}
+
+.logo-text {
+  font-family: "Lobster", cursive;
+  font-size: 48px;
+}
+
+.form-container {
+  padding: 0 30px;
+}
+
+.input-wrapper {
+  margin-bottom: 10px;
+}
+
+.login-input {
+  background-color: rgb(241, 241, 241);
+  color: gray;
+  font-size: 15px;
+  width: 100%;
+
+  padding: 10px 2px;
+}
+
+.btn-wrapper {
+  margin-top: 10px;
+  margin-bottom: 100px;
+}
+
+.login-btn {
+  background-color: lightblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 200px;
+  padding: 10px 2px;
+
+  font-size: 15px;
+
+  width: 100%;
+}
+
+.abled {
+  cursor: pointer;
+}
+
+.find-pw {
+  font-size: 13px;
+  color: blue;
+}
