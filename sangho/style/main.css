@@ -1,0 +1,215 @@
+* {
+  box-sizing: border-box;
+}
+
+/* --------------------상단 고정 탭-------------------- */
+
+#header {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 61px;
+  border-bottom: solid 1px #DBDBDB;
+  background-color: white;
+}
+
+#header-tab {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 900px;
+  height: 60px;
+}
+
+#header-tab a{
+  height: 30px;
+}
+
+#search-box {
+  width: 268px;
+  height: 36px;
+  padding-left: 10px;
+  border-radius: 7px;
+  border: none;
+  background-color: #EFEFEF;
+  font-size: 15px;
+  font-weight: 100;
+}
+
+#list-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 230px;
+}
+
+#list-box a {
+  height: 24px;
+}
+
+/* --------------------하단 메인 탭-------------------- */
+
+#main-container {
+  display: flex;
+  /* justify-content: space-between; */
+  width: 821px;
+  margin: 80px auto 30px auto;
+}
+
+/* --------------------메인컨테이너 왼쪽-------------------- */
+
+#inside-container1 {
+  display: flex;
+  flex-direction: column;
+}
+
+/* --------------------게시글-------------------- */
+.post-box {
+  display: flex;
+  flex-direction: column;
+  width: 470px;
+  border: solid 1px #DBDBDB;
+  border-radius: 7px;
+  margin: 6px 0;
+}
+
+.post-box-user {
+  display: flex;
+  align-items: center;
+  height: 56px;
+  border-radius: 7px;
+}
+
+.post-box-user a {
+  height: 32px;
+  margin: 8px 4px 8px 12px;
+}
+
+.post-box-user-name {
+  display: flex;
+  align-items: center;
+  width: 350px;
+  height: 40px;
+  margin-left: 10px;
+}
+
+.post-box-user-name a {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color: black;
+  text-decoration: none;
+  margin: 0;
+}
+
+.option-btn {
+  display: flex;
+  align-items: center;
+  border: none;
+  width: 24px;
+  height: 24px;
+  padding-left: 20px;
+}
+
+.post-box-img img{
+  width: 100%;
+  height: 100%;
+}
+
+.reaction {
+  display: flex;
+  flex-direction: column;
+}
+
+.reaction-btn {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.reaction-btn-img {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+}
+
+.reaction-user-name {
+  width: 446px;
+  height: 26px;
+  margin: 0 auto;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.reaction-user-name a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.reaction-comment-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 49px;
+  padding: 0 12px;
+  border-top: solid 1px #EFEFEF;
+}
+
+input:focus {
+  outline: none;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.reaction-comment-input input {
+  width: 100%;
+  height: 18px;
+  border: none;
+  border-radius: 7px;
+}
+
+.reaction-comment-input button {
+  font-size: 14px;
+  font-weight: 600;
+  width: 30px;
+  padding: 0;
+  background-color: white;
+  border: none;
+  color: #CBE5FD;
+  cursor: default;
+}
+
+
+/* --------------------메인컨테이너 오른쪽-------------------- */
+
+#inside-container2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#profile-box {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: 20px 0 0 30px;
+
+}
+
+#profile-box-name {
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+#other {
+  margin: 20px 0 0 30px;
+  color: #c9c9c9;
+  font-size: 14px;
+}
