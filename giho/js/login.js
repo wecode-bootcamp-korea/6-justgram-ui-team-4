@@ -11,13 +11,13 @@ function onInput(event) {
   const pw = passwordInput.value;
   const btn = loginButton;
 
-  if (id.length > 1 && pw.length > 1) {
-    console.log("버튼 활성화");
+  if (id.length > 0 && pw.length > 0) {
+    // 버튼 활성화
     btn.style.backgroundColor = "navy";
     btn.style.cursor = "pointer";
     btn.disabled = false;
   } else {
-    console.log("버튼 비활성화");
+    // 버튼 비활성화
     btn.style.backgroundColor = "#cde9f4";
     btn.style.cursor = "not-allowed";
     btn.disabled = true;
@@ -27,7 +27,3 @@ function onInput(event) {
 idInput.addEventListener("input", onInput);
 
 passwordInput.addEventListener("input", onInput);
-
-loginButton.addEventListener("click", () => {
-  console.log("클릭");
-});

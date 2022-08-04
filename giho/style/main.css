@@ -1,0 +1,61 @@
+.page-header {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.vc {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 32px;
+  height: 32px;
+}
+
+.jgr {
+  font-family: "Lobster", cursive;
+  font-size: 30px;
+}
+
+.icons {
+  width: 32px;
+  height: 32px;
+}
+
+.search {
+  width: 250px;
+  height: 30px;
+}
+
+.contents-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.feed-container {
+}
+
+.feed-header {
+  display: flex;
+  align-items: center;
+}
+
+.img-frame {
+  height: 600px;
+}
+
+.feed-img {
+  width: 100%;
+  height: 100%;
+}
+
+.feed-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feed-comments {
+}
