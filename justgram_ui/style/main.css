@@ -1,6 +1,6 @@
 @charset "uft-8";
 .to-do{
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
 
 }
 .v-center{
@@ -12,34 +12,54 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
-  padding: 0 100px;
+  padding: 10px 100px;
+  border-bottom: 1px solid lightgray;
 }
 .headerWrap>div>img{
-  width: 18px;
+  width: 20px;
+  padding-right: 10px;
 }
-/* .icon-img{
-  width: 32px; height: 32px;
-  margin-left: ;
-} */
-.custom-marginL{
-  margin-left: ;
+.logoImg{
+  border-right: 1px solid #333;
 }
+
 .header-text{
   font-family: 'Great Vibes', cursive;
   font-size: 30px;
+  padding-left: 10px;
 }
-.contentsWrap{
-  /* 화면에 100  */
-  height: 100vh; 
-  display: flex;
-  justify-content: center;
-  margin-top: 80px;
+
+
+
+.icon-img>img{
+  padding-left: 12px;
 }
 
 /*  */
+.borderBottom{
+  border-bottom:1px solid lightgray ;
+}
+.paddingLeft{
+  padding-left: 10px;
+}
+.contentsWrap{
+  /* 화면에 100  */
+  /* height: 100vh;  */
+  padding-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .feedContainer{
   width: 500px;
+  height: 100%;
+  border: 1px solid lightgray;
+  border-bottom: 0px;
+  /* background-color: cadetblue; */
+}
+.feedContainer:last-child{
+  margin-bottom: 80px;
+  border-bottom: 1px solid lightgray;
 }
 .feedHeader{
   display: flex;
@@ -48,6 +68,15 @@
   padding: 10px;
   align-items: center;
 }
+
+.profileImg{
+  width: 30px; height: 30px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+.feedHeader>div>a>span{
+  color: #000;
+}
 .feedImgWrap{
   height: 500px;
 }
@@ -55,5 +84,41 @@
   width: 100%;
   height: 100%;
 }
-.feedMenu{}
+.feedMenu{
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.feedMenu>ul{
+  display: flex;
+}
+.feedMenu>ul>li{
+  padding-right: 10px;
+}
+.feedMenu>div>ul>li:nth-child(1)>a>i{
+  color: crimson;
+}
 .feedComment{}
+
+.feedComment>div:nth-child(1){
+  margin-bottom: 10px;
+}
+.feedComment>div:nth-child(2)>span{
+  font-size: 14px;
+  color: #999;
+}
+.feedComment>div:nth-child(4){
+  padding-bottom: 10px;
+  font-size: 14px;
+  color: #999;
+}
+.newComment{
+  padding: 10px;
+  border-top: 1px solid lightgray;
+  font-size: 14px;
+  color: #999;
+}
+.newComment>span{
+  float: right;
+  color: rgb(0, 128, 255);
+}
