@@ -21,47 +21,16 @@ function activeBtn() {
 
 // 게시글이 여러개일때를 가정해서 반복문에 들어가있는 이벤트리스너 실행
 for (let i = 0; i < inputComment.length; i++) {
-  inputComment[i].addEventListener("keyup", activeBtn);
+  inputComment[i].addEventListener("keyup", activeBtn); // 댓글란에 키보드 입력이 감지되면 activBtn 함수 실행
 }
 
-function addComment(i) {
-  const userName = "sh.inv";
-  const tagArea = document.getElementsByClassName("comment")[i];
-  const newDiv = document.createElement("div");
-
-  newDiv.classList.add("add-comment");
-
-  newDiv.innerHTML = `
-    <span>
-      <a href="">${userName}</a>
-      <span>${inputComment.value}</span>
-    </span>
-    <button><img src="img/main_img/img/heart.png"></button>
-  `;
-
-  tagArea.appendChild(newDiv);
-
-  inputComment[index].value = "";
-
-  // for (let i = 0; i > inputComment.length; i++) {
-  //   const userName = 'sh.inv'
-  //   const tagArea = document.getElementsByClassName('comment')[i];
-  //   const newDiv = document.createElement('div').setAttribute('class', 'add-comment');
-
-  //   newDiv.innerHTML = `
-  //     <span>
-  //     <a href="">${userName}</a>
-  //       <span>${inputComment.value}</span>
-  //     </span>
-  //     <button><img src="img/main_img/img/heart.png"></button>
-  //   `;
-  // }
-}
 
 for (let i = 0; i < commentBtn.length; i++) {
+  const tagAreaIndex = document.getElementsByClassName("comment")[i];
+  const inputCommentIndex = inputComment[i];
+
   commentBtn[i].addEventListener("click", () => {
     const userName = "sh.inv";
-    const tagArea = document.getElementsByClassName("comment")[0];
     const newDiv = document.createElement("div");
 
     newDiv.classList.add("add-comment");
@@ -69,14 +38,14 @@ for (let i = 0; i < commentBtn.length; i++) {
     newDiv.innerHTML = `
       <span>
         <a href="">${userName}</a>
-        <span>${inputComment[0].value}</span>
+        <span>${inputCommentIndex.value}</span>
       </span>
       <button><img src="img/main_img/img/heart.png"></button>
     `;
 
-    tagArea.appendChild(newDiv);
+    tagAreaIndex.appendChild(newDiv);
 
-    inputComment[0].value = "";
+    inputCommentIndex.value = "";
 
     activeBtn();
   });

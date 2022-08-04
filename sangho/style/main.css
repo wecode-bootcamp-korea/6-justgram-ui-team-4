@@ -4,7 +4,7 @@
 
 /* --------------------상단 고정 탭-------------------- */
 
-#header {
+header {
   display: flex;
   justify-content: center;
   position: fixed;
