@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=Lobster"
+    />
     <link rel="stylesheet" href="/style/main.css" />
     <title>Document</title>
   </head>
@@ -12,8 +17,8 @@
       <div class="logo_area">justgram</div>
       <div class="search_area"><input type="search" placeholder="검색" /></div>
       <div class="mymenu_area">
-        <img src="/img/explore.png" /><img src="/img/heart.png" />
-        <img src="/img/profile.png" />
+        <img src="/img/explore.png" alt="" /><img src="/img/heart.png" alt="" />
+        <img src="/img/profile.png" alt="" />
       </div>
     </header>
     <div class="main_content">
@@ -22,17 +27,17 @@
           <span class="profile"></span>
           <p>user1</p>
         </div>
-        <div class="image"><img src="/img/timeline1.jpg" /></div>
+        <div class="image"><img src="/img/timeline1.jpg" alt="" /></div>
         <div class="menu">
           <div>
-            <img src="/img/heart.png" />
+            <img src="/img/heart.png" alt="" />
           </div>
           <div>저장</div>
         </div>
-        <div id="insert_comment"></div>
+        <div class="insert_comment"></div>
         <div class="comment">
-          <input type="text" placeholder="댓글 달기" class="input" value="1" />
-          <button id="button">게시</button>
+          <input type="text" placeholder="댓글 달기" class="input" />
+          <button class="button">게시</button>
         </div>
       </section>
       <section class="section one">
@@ -40,16 +45,17 @@
           <span class="profile"></span>
           <p>user2</p>
         </div>
-        <div class="image"><img src="/img/timeline2.jpg" /></div>
+        <div class="image"><img src="/img/timeline2.jpg" alt="" /></div>
         <div class="menu">
           <div>
-            <img src="/img/heart.png" />
+            <img src="/img/heart.png" alt="" />
           </div>
           <div>저장</div>
         </div>
+        <div class="insert_comment"></div>
         <div class="comment">
-          <input type="text" placeholder="댓글 달기" class="input" value="2" />
-          <button>게시</button>
+          <input type="text" placeholder="댓글 달기" class="input" />
+          <button class="button">게시</button>
         </div>
       </section>
       <section class="section one">
@@ -57,19 +63,20 @@
           <span class="profile"></span>
           <p>user3</p>
         </div>
-        <div class="image"><img src="/img/timeline3.jpg" /></div>
+        <div class="image"><img src="/img/timeline3.jpg" alt="" /></div>
         <div class="menu">
           <div>
-            <img src="/img/heart.png" />
+            <img src="/img/heart.png" alt="" />
           </div>
           <div>저장</div>
         </div>
+        <div class="insert_comment"></div>
         <div class="comment">
-          <input type="text" placeholder="댓글 달기" />
-          <button>게시</button>
+          <input type="text" placeholder="댓글 달기" class="input" />
+          <button class="button">게시</button>
         </div>
       </section>
     </div>
-    <script type="text/javascript" src="/js/main.js"></script>
   </body>
+  <script type="text/javascript" src="/js/main.js"></script>
 </html>
