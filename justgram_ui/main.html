@@ -14,6 +14,7 @@
 <script src="https://kit.fontawesome.com/fcf632df2a.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <div id="wrap">
   <!-- header -->
   <header class="to-do headerWrap">
     <!-- logo -->
@@ -23,7 +24,7 @@
     </div>
     <!-- search -->
     <div class="v-center">
-      <input type="search" placeholder="검색">
+      <input class="headerSearch paddingLeft" type="search" placeholder="검색">
     </div>
     <!-- nav -->
     <div class="icon-img v-center">
@@ -37,7 +38,7 @@
   <div class="to-do contentsWrap">
   
     <div>
-      <div class="to-do feedContainer">
+      <div class="to-do feedContainer ">
       <!-- feed header -->
       <div class="to-do feedHeader borderBottom">
         <div class="v-center">
@@ -67,9 +68,11 @@
       <!-- feed comment -->
       <div class="to-do feedComment">
         <div class="paddingLeft">name님 외 10명이 좋아합니다</div>
+        <!-- comment list -->
+        <div class="feedCommentlist">
         <div class="paddingLeft">name comment ... <span>더보기</span></div>
-        
         <div class="paddingLeft">name comment <span><img class="likeHeart" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="좋아요"></span></div>
+      </div>
         <div class="paddingLeft">42분전</div>
         <div class="newComment">
           <input type="text" class="inputNewComment" placeholder="댓글 달기 ... " />
@@ -80,7 +83,7 @@
       </div>
       <!--  -->
 
-      <div class="to-do feedContainer">
+      <div class="to-do feedContainer ">
         <!-- feed header -->
         <div class="to-do feedHeader borderBottom">
           <div class="v-center">
@@ -94,7 +97,7 @@
   
         <!-- feed img -->
         <div class="to-do feedImgWrap .borderBottom">
-          <img class="feedImg" src="./images/me.jpeg" alt="사진">
+          <img class="feedImg" src="./images/me1.jpeg" alt="사진">
         </div>
   
         <!-- feed menu -->
@@ -108,7 +111,7 @@
         </div>
   
         <!-- feed comment -->
-        <div class="to-do feedComment">
+        <div class="to-do feedComment ">
           <div class="paddingLeft">name님 외 10명이 좋아합니다</div>
           <div class="paddingLeft">name comment ... <span>더보기</span></div>
           
@@ -137,7 +140,7 @@
     
           <!-- feed img -->
           <div class="to-do feedImgWrap .borderBottom">
-            <img class="feedImg" src="./images/me.jpeg" alt="사진">
+            <img class="feedImg" src="./images/me2.jpeg" alt="사진">
           </div>
     
           <!-- feed menu -->
@@ -152,13 +155,13 @@
     
           <!-- feed comment -->
           <div class="to-do feedComment">
-            <div class="paddingLeft">name님 외 10명이 좋아합니다</div>
-            <div class="paddingLeft">name comment ... <span>더보기</span></div>
+            <div class="paddingLeft feedCommentLike">name님 외 10명이 좋아합니다</div>
+            <div class="paddingLeft feedCommentlist">name comment ... <span>더보기</span></div>
             
-            <div class="paddingLeft">name comment <span><img class="likeHeart" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="좋아요"></span></div>
+            <div class="paddingLeft feedCommentlist">name comment <span><img class="likeHeart" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="좋아요"></span></div>
             <div class="paddingLeft">42분전</div>
             <div class="newComment">
-              <input type="text" class="inputNewComment" placeholder="댓글 달기 ... " />
+              <input type="text" class="inputNewComment feedCommentWrite" placeholder="댓글 달기 ... " />
               <input type="submit" class="newCommentBtn " value="게시"></div>
           
     
@@ -166,9 +169,8 @@
           </div>
           <!--  -->
     </div>
-
-      
   </div>
+</div>
   <script type="text/javascript" src="./js/main.js"></script>
 </body>
 </html>
