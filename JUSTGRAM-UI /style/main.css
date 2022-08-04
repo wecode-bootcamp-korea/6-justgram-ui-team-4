@@ -17,11 +17,11 @@ body {
   background: rgb(250, 250, 250);
 }
 header {
-  width: 100%;
-  background: #fff;
   display: flex;
   justify-content: space-between;
   padding: 10px 50px;
+  width: 100%;
+  background: #fff;
   border-bottom: 1px solid #ddd;
   position: fixed;
 }
@@ -36,9 +36,9 @@ header {
 }
 .section {
   width: 40%;
+  margin: 0 auto 30px;
   border: 1px solid #ddd;
   border-radius: 5px;
-  margin: 0 auto 30px;
   background: #fff;
 }
 .timeline_header {
@@ -67,8 +67,8 @@ header {
   margin-right: 0;
 }
 .profile {
-  margin-right: 10px;
   display: inline-block;
+  margin-right: 10px;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -88,23 +88,23 @@ header {
   width: 25px;
 }
 .comment {
-  padding: 10px;
   display: flex;
   justify-content: space-between;
+  padding: 10px;
   border-top: 1px solid #ddd;
 }
 .comment input {
-  width: 85%;
+  flex-grow: 1;
   padding: 10px;
   font-size: 16px;
   border: none;
 }
 .comment button {
+  padding: 10px;
   font-size: 14px;
   background: none;
   border: none;
   color: rgb(165, 219, 255);
-  padding: 10px;
 }
 
 .user_comment {
