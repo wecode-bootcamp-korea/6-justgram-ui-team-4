@@ -7,6 +7,82 @@
   <title>justgram</title>
 </head>
 <body>
-  
+  <div id="wrap">
+    <!-- header -->
+    <header>
+    <nav>
+      <ul class="left">
+        <li>icon</li>
+        <li>로고</li>
+      </ul>
+      <div class="inputSearch">
+        <input type="search" placeholder="검색">
+      </div>
+      <ul class="right">
+        <li>주소</li>
+        <li>좋아요</li>
+        <li>프로필</li>
+      </ul>
+    </nav>
+    </header>
+
+    <!-- contents -->
+    <div id="contentsWrap">
+      <!-- contents header -->
+      <div class="top">
+        <dl>
+          <dt>
+            <a href="#"><img src="">name</a>
+          </dt>
+          <dd>더보기</dd>
+        </dl>
+      </div>
+      <!-- contents images -->
+      <div class="images">
+        <a href="#"><img src="">사진</a>
+      </div>
+      <!-- contents menu -->
+      <div class="menuBar">
+        <!-- menu top icon -->
+        <div class="menuTop">
+          <ul class="menuLeft">
+            <li>하트</li>
+            <li>댓글</li>
+            <li>공유</li>
+          </ul>
+          <div class="menuRight">
+            <a href="#">담기</a>
+          </div>
+        </div>
+        <!-- menu like-->
+        <div class="menuLike">
+          <dl>
+            <dt><a href="#">name</a><span>님</span></dt>
+            <dd><a href="#">외 10명</a><span>이 좋아합니다.</span></dd>
+          </dl>
+        </div>
+        <div class="commentList">
+          <!-- user comment -->
+          <dl>
+            <dt><a href="#">name</a></dt>
+            <dd>text</dd>
+            <dd><button>더보기</button></dd>
+          </dl>
+          <!-- guest comment -->
+          <dl>
+            <dt><a href="#">name</a></dt>
+            <dd><a href="#">guest comment</a></dd>
+            <dd><a href="#">하트</a></dd>
+          </dl>
+          <p><a href="#">42분전</a></p>
+        </div>
+      </div>
+      <!-- next comment -->
+      <div class="comment">
+        <input type="text" placeholder="댓글 달기...">
+        <input type="submit" value="게시">
+      </div>
+    </div>
+  </div>
 </body>
 </html>
