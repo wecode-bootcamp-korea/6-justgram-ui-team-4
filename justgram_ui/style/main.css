@@ -50,6 +50,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .feedContainer{
   width: 500px;
   height: 100%;
@@ -95,8 +96,15 @@
 .feedMenu>ul>li{
   padding-right: 10px;
 }
-.feedMenu>div>ul>li:nth-child(1)>a>i{
+.likeColor{
   color: crimson;
+}
+
+/* comment */
+.likeHeart{
+  width: 10px;
+  float: right;
+  padding-right: 10px;
 }
 .feedComment{}
 
@@ -112,13 +120,21 @@
   font-size: 14px;
   color: #999;
 }
+
 .newComment{
-  padding: 10px;
   border-top: 1px solid lightgray;
+}
+
+.inputNewComment{
+  padding: 10px;
+  border:none;
   font-size: 14px;
   color: #999;
 }
-.newComment>span{
+.newCommentBtn{
+  padding-top: 10px;
   float: right;
+  border: 0px;
+  background-color:#fff;
   color: rgb(0, 128, 255);
 }

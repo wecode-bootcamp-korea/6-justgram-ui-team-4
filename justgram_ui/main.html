@@ -32,8 +32,10 @@
       <img class="custom-marginL" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png">
     </div>
   </header>
+
   <!-- contents -->
   <div class="to-do contentsWrap">
+  
     <div>
       <div class="to-do feedContainer">
       <!-- feed header -->
@@ -55,7 +57,7 @@
       <!-- feed menu -->
       <div class="to-do feedMenu ">
         <ul>
-          <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+          <li><a href="#"><i class="fa-solid fa-heart likeColor"></i></a></li>
           <li><a href="#"><i class="fa-light fa-comment"></i></a></li>
           <li><a href="#"><i class="fa-thin fa-arrow-up-from-bracket"></i></a></li>
         </ul>
@@ -67,15 +69,17 @@
         <div class="paddingLeft">name님 외 10명이 좋아합니다</div>
         <div class="paddingLeft">name comment ... <span>더보기</span></div>
         
-        <div class="paddingLeft">name comment</div>
+        <div class="paddingLeft">name comment <span><img class="likeHeart" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="좋아요"></span></div>
         <div class="paddingLeft">42분전</div>
-        <div class="newComment">댓글 달기 ... <span>게시</span></div>
-      </div>
+        <div class="newComment">
+          <input type="text" class="inputNewComment" placeholder="댓글 달기 ... " />
+          <input type="submit" class="newCommentBtn " value="게시"></div>
       
 
       </div>
-
+      </div>
       <!--  -->
+
       <div class="to-do feedContainer">
         <!-- feed header -->
         <div class="to-do feedHeader borderBottom">
@@ -96,7 +100,7 @@
         <!-- feed menu -->
         <div class="to-do feedMenu ">
           <ul>
-            <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-heart likeColor"></i></a></li>
             <li><a href="#"><i class="fa-light fa-comment"></i></a></li>
             <li><a href="#"><i class="fa-thin fa-arrow-up-from-bracket"></i></a></li>
           </ul>
@@ -108,14 +112,18 @@
           <div class="paddingLeft">name님 외 10명이 좋아합니다</div>
           <div class="paddingLeft">name comment ... <span>더보기</span></div>
           
-          <div class="paddingLeft">name comment</div>
+          <div class="paddingLeft">name comment <span><img class="likeHeart" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="좋아요"></span></div>
           <div class="paddingLeft">42분전</div>
-          <div class="newComment">댓글 달기 ... <span>게시</span></div>
+          <div class="newComment">
+            <input type="text" class="inputNewComment" placeholder="댓글 달기 ... " />
+            <input type="submit" class="newCommentBtn " value="게시"></div>
+        
+  
         </div>
-      </div>
+        </div>
+        <!--  -->
 
-      <!--  -->
-      <div class="to-do feedContainer">
+        <div class="to-do feedContainer">
           <!-- feed header -->
           <div class="to-do feedHeader borderBottom">
             <div class="v-center">
@@ -135,7 +143,7 @@
           <!-- feed menu -->
           <div class="to-do feedMenu ">
             <ul>
-              <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+              <li><a href="#"><i class="fa-solid fa-heart likeColor"></i></a></li>
               <li><a href="#"><i class="fa-light fa-comment"></i></a></li>
               <li><a href="#"><i class="fa-thin fa-arrow-up-from-bracket"></i></a></li>
             </ul>
@@ -147,12 +155,20 @@
             <div class="paddingLeft">name님 외 10명이 좋아합니다</div>
             <div class="paddingLeft">name comment ... <span>더보기</span></div>
             
-            <div class="paddingLeft">name comment</div>
+            <div class="paddingLeft">name comment <span><img class="likeHeart" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="좋아요"></span></div>
             <div class="paddingLeft">42분전</div>
-            <div class="newComment">댓글 달기 ... <span>게시</span></div>
+            <div class="newComment">
+              <input type="text" class="inputNewComment" placeholder="댓글 달기 ... " />
+              <input type="submit" class="newCommentBtn " value="게시"></div>
+          
+    
           </div>
-      </div>
+          </div>
+          <!--  -->
     </div>
+
+      
   </div>
+  <script type="text/javascript" src="./js/main.js"></script>
 </body>
 </html>
