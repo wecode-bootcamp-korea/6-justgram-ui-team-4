@@ -1,51 +1,117 @@
-body {
-  position: relative;
+/* 요소 크기, 위치 확인용 */
+.border-test {
+  border: 1px solid black;
+}
+
+.vertical-center {
+  display: flex;
+  align-items: center;
 }
 
 .header-wrapper {
-  border: 1px solid black;
-  padding: 10px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 350px;
 }
 
-.v-line {
-  border-left: thick solid #000;
-  height: 70px;
-  position: absolute;
-  margin-top: 10px;
+.logo-wrapper {
+  display: flex;
+  flex-direction: row;
 }
 
 .logo-img {
-  margin: 10px 20px 0 0;
+  width: 36px;
+  height: 36px;
 }
 
 .logo-text {
-  display: inline-block;
   font-family: "Lobster", cursive;
-  font-size: 30px;
-  margin-left: 20px;
+  font-size: 36px;
 }
 
-.main-container {
-  border: 1px solid black;
+.custom-margin-left {
+  margin-left: 10px;
 }
 
-.search {
-  position: relative;
-  display: inline-block;
-  width: 300px;
-  left: 10%;
-}
-
-.search-input {
+.feed-container {
   width: 100%;
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: 10px 12px;
-  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+  background-color: rgb(245, 245, 245);
 }
 
-.img3 {
-  position: relative;
-  display: inline-block;
-  left: 25%;
+.feed-wrapper {
+  background-color: white;
+}
+
+.profile-img {
+  width: 36px;
+  height: 36px;
+  border-radius: 70%;
+  margin-right: 5px;
+}
+
+.profile-id {
+  font-size: 24px;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+
+.profile-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.feed-img {
+  width: 100%;
+}
+
+.menu-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+
+.total-likes {
+  margin: 5px 0 10px 5px;
+}
+
+.total-comments {
+  margin-left: 5px;
+}
+
+.minutes-ago {
+  padding-top: 10px;
+  padding-left: 5px;
+  color: gray;
+  font-size: 15px;
+}
+
+.hr-margin {
+  margin-bottom: 0;
+}
+
+.comment-input {
+  border: none;
+}
+
+.comment-input-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.comment-btn {
+  border: none;
+  background-color: white;
+  color: lightblue;
+  cursor: pointer;
 }

@@ -2,9 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <title>Justgram main page</title>
+
     <!-- css 적용 -->
     <link rel="stylesheet" href="style/main.css" />
-    <title>Justgram main page</title>
+    <link rel="stylesheet" href="style/common.css" />
 
     <!-- 폰트 적용 -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,39 +18,222 @@
   </head>
 
   <body>
-    <div class="main-container">
-      <hr width="100%" color="black" />
-      <header class="header-wrapper">
-        <img class="logo-img" src="instagramlogo64.png" />
-        <span class="v-line"></span>
-        <div class="logo-text">Justgram</div>
-        <div class="search">
-          <input type="text" class="search-input" placeholder="검색" />
-        </div>
-        <div class="img3">
-          <img
-            src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png"
-          />
-          <img
-            src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
-          />
-          <img
-            src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png"
-          />
-        </div>
-      </header>
-      <div>
+    <!-- justgram logo && search && img3 -->
+    <header class="header-wrapper vertical-center">
+      <div class="logo-wrapper vertical-center">
+        <img
+          class="logo-img"
+          alt="인스타로고"
+          src="image/instagramlogo64.png"
+        />
+        <div class="logo-text">| Justgram</div>
+      </div>
+      <div class="search-input vertical-center">
+        <input type="text" placeholder="검색" />
+      </div>
+      <div class="vertical-center">
+        <img
+          class="logo-img"
+          alt="나침반"
+          src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png"
+        />
+        <img
+          class="logo-img custom-margin-left"
+          alt="하트"
+          src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
+        />
+        <img
+          class="logo-img custom-margin-left"
+          alt="프로필"
+          src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png"
+        />
+      </div>
+    </header>
+    <!-- feed -->
+    <div class="feed-container vertical-center">
+      <div class="feed-wrapper">
+        <!-- feed header -->
         <header>
-          <div>
-            <span class="profile-img">프로필 사진 (img 태그로 변경해야함)</span>
-            <span class="profile-id">아이디</span>
-          </div>
-          <div>
-            <span class="feed-img">피드 이미지 (img 태그로 변경해야함)</span>
+          <!-- profile img && id -->
+          <div class="profile-container">
+            <div class="profile-wrapper vertical-center">
+              <img
+                class="profile-img vertical-center"
+                alt="프로필이미지"
+                src="image/profile1-img.png"
+              />Sucheol9773
+            </div>
+            <div>...</div>
           </div>
         </header>
-        <div>메뉴바(하트, 말풍선, 공유, 저장)</div>
-        <div>댓글</div>
+        <!-- feed img -->
+        <div>
+          <img class="feed-img" alt="피드이미지" src="image/feed1-img.png" />
+        </div>
+        <!-- feed menu -->
+        <div>
+          <!-- menu icons -->
+          <div class="menu-icons">
+            <div>
+              <img
+                class="heart-img logo-img"
+                alt="좋아요"
+                src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
+              />
+              <img
+                class="comment-img logo-img"
+                alt="말풍선"
+                src="image/comment.png"
+              />
+              <img
+                class="share-img logo-img"
+                alt="공유"
+                src="image/share.png"
+              />
+            </div>
+            <div>
+              <img class="save-img logo-img" alt="저장" src="image/save.png" />
+            </div>
+          </div>
+        </div>
+        <!-- comment -->
+        <div class="feed-comment">
+          <div class="total-likes">"ID"님 외 **명이 좋아합니다.</div>
+          <div class="total-comments">
+            <div>"ID1" "comment1"</div>
+            <div>"ID2" "comment2"</div>
+          </div>
+          <div class="minutes-ago">..분 전</div>
+        </div>
+        <hr class="hr-margin" />
+        <div class="comment-input-wrapper">
+          <input type="text" class="comment-input" placeholder="댓글 달기..." />
+          <button class="comment-btn" type="button">게시</button>
+        </div>
+      </div>
+    </div>
+    <div class="feed-container vertical-center">
+      <div class="feed-wrapper">
+        <!-- feed header -->
+        <header>
+          <!-- profile img && id -->
+          <div class="profile-container">
+            <div class="profile-wrapper vertical-center">
+              <img
+                class="profile-img vertical-center"
+                alt="프로필이미지"
+                src="image/profile1-img.png"
+              />Sucheol9773
+            </div>
+            <div>...</div>
+          </div>
+        </header>
+        <!-- feed img -->
+        <div>
+          <img class="feed-img" alt="피드이미지" src="image/feed1-img.png" />
+        </div>
+        <!-- feed menu -->
+        <div>
+          <!-- menu icons -->
+          <div class="menu-icons">
+            <div>
+              <img
+                class="heart-img logo-img"
+                alt="좋아요"
+                src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
+              />
+              <img
+                class="comment-img logo-img"
+                alt="말풍선"
+                src="image/comment.png"
+              />
+              <img
+                class="share-img logo-img"
+                alt="공유"
+                src="image/share.png"
+              />
+            </div>
+            <div>
+              <img class="save-img logo-img" alt="저장" src="image/save.png" />
+            </div>
+          </div>
+        </div>
+        <!-- comment -->
+        <div class="feed-comment">
+          <div class="total-likes">"ID"님 외 **명이 좋아합니다.</div>
+          <div class="total-comments">
+            <div>"ID1" "comment1"</div>
+            <div>"ID2" "comment2"</div>
+          </div>
+          <div class="minutes-ago">..분 전</div>
+        </div>
+        <hr class="hr-margin" />
+        <div class="comment-input-wrapper">
+          <input type="text" class="comment-input" placeholder="댓글 달기..." />
+          <button class="comment-btn" type="button">게시</button>
+        </div>
+      </div>
+    </div>
+    <div class="feed-container vertical-center">
+      <div class="feed-wrapper">
+        <!-- feed header -->
+        <header>
+          <!-- profile img && id -->
+          <div class="profile-container">
+            <div class="profile-wrapper vertical-center">
+              <img
+                class="profile-img vertical-center"
+                alt="프로필이미지"
+                src="image/profile1-img.png"
+              />Sucheol9773
+            </div>
+            <div>...</div>
+          </div>
+        </header>
+        <!-- feed img -->
+        <div>
+          <img class="feed-img" alt="피드이미지" src="image/feed1-img.png" />
+        </div>
+        <!-- feed menu -->
+        <div>
+          <!-- menu icons -->
+          <div class="menu-icons">
+            <div>
+              <img
+                class="heart-img logo-img"
+                alt="좋아요"
+                src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
+              />
+              <img
+                class="comment-img logo-img"
+                alt="말풍선"
+                src="image/comment.png"
+              />
+              <img
+                class="share-img logo-img"
+                alt="공유"
+                src="image/share.png"
+              />
+            </div>
+            <div>
+              <img class="save-img logo-img" alt="저장" src="image/save.png" />
+            </div>
+          </div>
+        </div>
+        <!-- comment -->
+        <div class="feed-comment">
+          <div class="total-likes">"ID"님 외 **명이 좋아합니다.</div>
+          <div class="total-comments">
+            <div>"ID1" "comment1"</div>
+            <div>"ID2" "comment2"</div>
+          </div>
+          <div class="minutes-ago">..분 전</div>
+        </div>
+        <hr class="hr-margin" />
+        <div class="comment-input-wrapper">
+          <input type="text" class="comment-input" placeholder="댓글 달기..." />
+          <button class="comment-btn" type="button">게시</button>
+        </div>
       </div>
     </div>
     <script src="js/main.js"></script>
