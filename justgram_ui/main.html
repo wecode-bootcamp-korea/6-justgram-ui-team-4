@@ -4,83 +4,51 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>justgram</title>
+  <title>Justgram</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="./style/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Joan&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style/common.css">
 </head>
 <body>
-   <div id="wrap">
-    <!-- header -->
-    <header>
-    <nav>
-      <ul class="left">
-        <li>icon</li>
-        <li>로고</li>
-      </ul>
-      <div class="inputSearch">
-        <input type="search" placeholder="검색">
+  <header class="to-do headerWrap">
+    <div>
+      <img src="./images/instagram.png">
+      <span class="header-text">Justgram</span>
+    </div>
+    <div class="v-center">
+      <input type="search" placeholder="검색">
+    </div>
+    <div class="icon-img v-center">
+      <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png">
+      <img class="custom-marginL" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png">
+      <img class="custom-marginL" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png">
+    </div>
+  </header>
+  <div class="to-do contentsWrap">
+    <div>
+      <div class="to-do feedContainer">
+        
       </div>
-      <ul class="right">
-        <li>주소</li>
-        <li>좋아요</li>
-        <li>프로필</li>
-      </ul>
-    </nav>
-    </header>
-
-    <!-- contents -->
-    <div id="contentsWrap">
-      <!-- contents header -->
-      <div class="top">
-        <dl>
-          <dt>
-            <a href="#"><img src="">name</a>
-          </dt>
-          <dd>더보기</dd>
-        </dl>
+      <div class="to-do feedHeader">
+        <div class="v-center"><img src="" alt="이미지"> 아이디</div>
+        <div>...</div>
       </div>
-      <!-- contents images -->
-      <div class="images">
-        <a href="#"><img src="">사진</a>
+      <div class="to-do feedImgWrap">
+        <img class="feedImg" src="./images/me.jpeg" alt="사진">
       </div>
-      <!-- contents menu -->
-      <div class="menuBar">
-        <!-- menu top icon -->
-        <div class="menuTop">
-          <ul class="menuLeft">
-            <li>하트</li>
-            <li>댓글</li>
-            <li>공유</li>
-          </ul>
-          <div class="menuRight">
-            <a href="#">담기</a>
-          </div>
-        </div>
-        <!-- menu like-->
-        <div class="menuLike">
-          <dl>
-            <dt><a href="#">name</a><span>님</span></dt>
-            <dd><a href="#">외 10명</a><span>이 좋아합니다.</span></dd>
-          </dl>
-        </div>
-        <div class="commentList">
-          <!-- user comment -->
-          <dl>
-            <dt><a href="#">name</a></dt>
-            <dd>text</dd>
-            <dd><button>더보기</button></dd>
-          </dl>
-          <!-- guest comment -->
-          <dl>
-            <dt><a href="#">name</a></dt>
-            <dd><a href="#">guest comment</a></dd>
-            <dd><a href="#">하트</a></dd>
-          </dl>
-          <p><a href="#">42분전</a></p>
-        </div>
+      <div class="to-do feedMenu">
+        <div>l</div>
+        <div>r</div>
       </div>
-      <!-- next comment -->
-      <div class="comment">
-        <input type="text" placeholder="댓글 달기...">
-        <input type="submit" value="게시">
+      <div class="to-do feedComment">
+        <div>name님 외 10명이 좋아합니다</div>
+        <div>name comment</div>
+        <div>name comment</div>
+        <div>42분전</div>
+        <div>댓글달기 ...</div>
       </div>
     </div>
   </div>
