@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Justgram</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="./style/login.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Joan&display=swap" rel="stylesheet">
+</head> 
+<body >
+  <div id="container">
+    <!-- logo -->
+      <!-- 로고 css중앙 정렬 display:flex > justify:center, align-item:center을 위해 div logoWrap -->
+      <div class="logoWrap flex-center">
+      <span class="logo-text">Justgram</span>
+    </div>
+    <!-- form -->
+    <div id="formWrap">
+      <div class="flex-center loginWrap">
+        <input id="idForm" class="login-input" type="text" placeholder="전화번호, 사용자 이름 또는 이메일" >
+      </div>
+      <div class="flex-center loginWrap">
+        <input id="pwForm" class="login-input" type="text" placeholder="비밀번호" >
+      </div>  
+      <!-- button -->
+      <div class="flex-center btnWrap">
+        <button id="btn">로그인</button>
+      </div>
+    </div>
+    <div id="text">
+      <a href="#">비밀번호를 잊으셨나요?</a>
+    </div>
+  </div>
+  
+</body>
+<script type="text/javascript" src="./js/login.js"></script>
+</html>
