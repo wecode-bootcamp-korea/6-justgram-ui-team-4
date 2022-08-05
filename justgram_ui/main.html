@@ -10,22 +10,25 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Joan&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./style/common.css">
 <script src="https://kit.fontawesome.com/fcf632df2a.js" crossorigin="anonymous"></script>
+<script  defer src="./js/main.js"></script>
 </head>
 <body>
-  <div id="wrap">
+<div id="wrap">
   <!-- header -->
   <header class="to-do headerWrap">
+
     <!-- logo -->
     <div>
       <img class="logoImg" src="./images/instagram.png">
       <span class="header-text">Justgram</span>
     </div>
+
     <!-- search -->
     <div class="v-center">
       <input class="headerSearch paddingLeft" type="search" placeholder="검색">
     </div>
+
     <!-- nav -->
     <div class="icon-img v-center">
       <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png">
@@ -36,9 +39,58 @@
 
   <!-- contents -->
   <div class="to-do contentsWrap">
-  
+
     <div>
-      <div class="to-do feedContainer ">
+
+    <div class="to-do feedContainer">
+    <!-- feed header -->
+    <div class="to-do feedHeader borderBottom">
+      <div class="v-center">
+        <a class="v-center" href="#">
+          <img class="profileImg" src="./images/profile.jpeg" alt="이미지">
+          <span> mi_ogy</span>
+        </a>
+      </div>
+      <div>...</div>
+    </div>
+    
+    <!-- feed img -->
+    <div class="to-do feedImgWrap .borderBottom">
+      <img class="feedImg" src="./images/me2.jpeg" alt="사진">
+    </div>
+    
+    <!-- feed menu -->
+    <div class="to-do feedMenu ">
+      <ul>
+        <li><a href="#"><i class="fa-solid fa-heart likeColor"></i></a></li>
+        <li><a href="#"><i class="fa-light fa-comment"></i></a></li>
+        <li><a href="#"><i class="fa-thin fa-arrow-up-from-bracket"></i></a></li>
+      </ul>
+      <p>담기</p>
+    </div>
+    
+    <!-- feed comment -->
+    <div class="to-do feedComment">
+      <div class="paddingLeft feedCommentLike">name님 외 10명이 좋아합니다</div>
+      <div class="feedCommentList">
+        <div class="paddingLeft">name comment ... <span>더보기</span></div>
+        <div class="paddingLeft">name comment</div>
+      </div>
+      <div class="paddingLeft">42분전</div>
+
+    <!-- new comment -->
+    <div class="feedCommentWrite newComment">
+      <input type="text" class="inputNewComment" placeholder="댓글 달기 ... " >
+      <button class="newCommentBtn feedCommentBtn">게시</button>
+    </div>
+
+    </div>
+    <!--  -->
+      
+    </div>
+    <!--  -->
+
+    <div class="to-do feedContainer">
       <!-- feed header -->
       <div class="to-do feedHeader borderBottom">
         <div class="v-center">
@@ -49,12 +101,12 @@
         </div>
         <div>...</div>
       </div>
-
+      
       <!-- feed img -->
       <div class="to-do feedImgWrap .borderBottom">
-        <img class="feedImg" src="./images/me.jpeg" alt="사진">
+        <img class="feedImg" src="./images/me2.jpeg" alt="사진">
       </div>
-
+      
       <!-- feed menu -->
       <div class="to-do feedMenu ">
         <ul>
@@ -64,113 +116,81 @@
         </ul>
         <p>담기</p>
       </div>
-
+      
       <!-- feed comment -->
       <div class="to-do feedComment">
-        <div class="paddingLeft">name님 외 10명이 좋아합니다</div>
-        <!-- comment list -->
-        <div class="feedCommentlist">
-        <div class="paddingLeft">name comment ... <span>더보기</span></div>
-        <div class="paddingLeft">name comment <span><img class="likeHeart" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="좋아요"></span></div>
-      </div>
+        <div class="paddingLeft feedCommentLike">name님 외 10명이 좋아합니다</div>
+        <div class="feedCommentList">
+          <div class="paddingLeft">name comment ... <span>더보기</span></div>
+          <div class="paddingLeft">name comment</div>
+        </div>
         <div class="paddingLeft">42분전</div>
-        <div class="newComment">
-          <input type="text" class="inputNewComment" placeholder="댓글 달기 ... " />
-          <input type="submit" class="newCommentBtn " value="게시"></div>
-      
-
+  
+      <!-- new comment -->
+      <div class="feedCommentWrite newComment">
+        <input type="text" class="inputNewComment" placeholder="댓글 달기 ... " >
+        <button class="newCommentBtn feedCommentBtn">게시</button>
       </div>
+  
       </div>
       <!--  -->
-
-      <div class="to-do feedContainer ">
-        <!-- feed header -->
-        <div class="to-do feedHeader borderBottom">
-          <div class="v-center">
-            <a class="v-center" href="#">
-              <img class="profileImg" src="./images/profile.jpeg" alt="이미지">
-              <span> mi_ogy</span>
-            </a>
-          </div>
-          <div>...</div>
-        </div>
-  
-        <!-- feed img -->
-        <div class="to-do feedImgWrap .borderBottom">
-          <img class="feedImg" src="./images/me1.jpeg" alt="사진">
-        </div>
-  
-        <!-- feed menu -->
-        <div class="to-do feedMenu ">
-          <ul>
-            <li><a href="#"><i class="fa-solid fa-heart likeColor"></i></a></li>
-            <li><a href="#"><i class="fa-light fa-comment"></i></a></li>
-            <li><a href="#"><i class="fa-thin fa-arrow-up-from-bracket"></i></a></li>
-          </ul>
-          <p>담기</p>
-        </div>
-  
-        <!-- feed comment -->
-        <div class="to-do feedComment ">
-          <div class="paddingLeft">name님 외 10명이 좋아합니다</div>
-          <div class="paddingLeft">name comment ... <span>더보기</span></div>
-          
-          <div class="paddingLeft">name comment <span><img class="likeHeart" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="좋아요"></span></div>
-          <div class="paddingLeft">42분전</div>
-          <div class="newComment">
-            <input type="text" class="inputNewComment" placeholder="댓글 달기 ... " />
-            <input type="submit" class="newCommentBtn " value="게시"></div>
         
-  
-        </div>
-        </div>
-        <!--  -->
-
-        <div class="to-do feedContainer">
-          <!-- feed header -->
-          <div class="to-do feedHeader borderBottom">
-            <div class="v-center">
-              <a class="v-center" href="#">
-                <img class="profileImg" src="./images/profile.jpeg" alt="이미지">
-                <span> mi_ogy</span>
-              </a>
-            </div>
-            <div>...</div>
-          </div>
-    
-          <!-- feed img -->
-          <div class="to-do feedImgWrap .borderBottom">
-            <img class="feedImg" src="./images/me2.jpeg" alt="사진">
-          </div>
-    
-          <!-- feed menu -->
-          <div class="to-do feedMenu ">
-            <ul>
-              <li><a href="#"><i class="fa-solid fa-heart likeColor"></i></a></li>
-              <li><a href="#"><i class="fa-light fa-comment"></i></a></li>
-              <li><a href="#"><i class="fa-thin fa-arrow-up-from-bracket"></i></a></li>
-            </ul>
-            <p>담기</p>
-          </div>
-    
-          <!-- feed comment -->
-          <div class="to-do feedComment">
-            <div class="paddingLeft feedCommentLike">name님 외 10명이 좋아합니다</div>
-            <div class="paddingLeft feedCommentlist">name comment ... <span>더보기</span></div>
-            
-            <div class="paddingLeft feedCommentlist">name comment <span><img class="likeHeart" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="좋아요"></span></div>
-            <div class="paddingLeft">42분전</div>
-            <div class="newComment">
-              <input type="text" class="inputNewComment feedCommentWrite" placeholder="댓글 달기 ... " />
-              <input type="submit" class="newCommentBtn " value="게시"></div>
-          
-    
-          </div>
-          </div>
-          <!--  -->
     </div>
+    <!--  -->
+
+    <div class="to-do feedContainer">
+      <!-- feed header -->
+      <div class="to-do feedHeader borderBottom">
+        <div class="v-center">
+          <a class="v-center" href="#">
+            <img class="profileImg" src="./images/profile.jpeg" alt="이미지">
+            <span> mi_ogy</span>
+          </a>
+        </div>
+        <div>...</div>
+      </div>
+      
+      <!-- feed img -->
+      <div class="to-do feedImgWrap .borderBottom">
+        <img class="feedImg" src="./images/me2.jpeg" alt="사진">
+      </div>
+      
+      <!-- feed menu -->
+      <div class="to-do feedMenu ">
+        <ul>
+          <li><a href="#"><i class="fa-solid fa-heart likeColor"></i></a></li>
+          <li><a href="#"><i class="fa-light fa-comment"></i></a></li>
+          <li><a href="#"><i class="fa-thin fa-arrow-up-from-bracket"></i></a></li>
+        </ul>
+        <p>담기</p>
+      </div>
+      
+      <!-- feed comment -->
+      <div class="to-do feedComment">
+        <div class="paddingLeft feedCommentLike">name님 외 10명이 좋아합니다</div>
+
+      <!-- feed comment list -->
+        <div class="feedCommentList">
+          <div class="paddingLeft">name comment ... <span>더보기</span></div>
+          <div class="paddingLeft">name comment</div>
+        </div>
+        <div class="paddingLeft">42분전</div>
+  
+      <!-- input comment -->
+      <div class="feedCommentWrite newComment">
+        <input type="text" class="inputNewComment" placeholder="댓글 달기 ... " >
+        <button class="newCommentBtn feedCommentBtn">게시</button>
+      </div>
+  
+      </div>
+      <!--  -->
+        
+      </div>
+      <!--  -->
+    </div>
+
   </div>
 </div>
-  <script type="text/javascript" src="./js/main.js"></script>
+
 </body>
 </html>

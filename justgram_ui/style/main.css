@@ -1,8 +1,6 @@
 @charset "uft-8";
 /* 공통부분 */
-.to-do{
-  /* border: 1px solid #000; */
-}
+
 
 .v-center{
   display: flex;
