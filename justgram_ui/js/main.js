@@ -4,6 +4,7 @@ const commentInput = document.getElementsByClassName("inputNewComment");
 const commentBtn = document.getElementsByClassName("feedCommentBtn");
 // comment list
 const commentList = document.getElementsByClassName("feedCommentList");
+//enter
 
 Array.from(commentBtn).forEach((btn, index) => {
 
@@ -18,6 +19,7 @@ Array.from(commentBtn).forEach((btn, index) => {
 
     childElem.append(nameSpan, content);
     commentList[index].appendChild(childElem);
+
   });
 });
 
