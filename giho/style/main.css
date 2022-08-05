@@ -1,61 +1,95 @@
-.page-header {
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+.to-do {
+  border: 1px solid black;
 }
-.vc {
+
+.flex-center {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
-.logo {
+.icon-images {
   width: 32px;
   height: 32px;
 }
 
-.jgr {
+.custom-margin-left {
+  margin-left: 10px;
+}
+
+.vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+.header-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+
+.header-text {
   font-family: "Lobster", cursive;
   font-size: 30px;
 }
 
-.icons {
-  width: 32px;
-  height: 32px;
-}
-
 .search {
   width: 250px;
-  height: 30px;
+  height: 20px;
 }
 
 .contents-wrapper {
-  display: flex;
-  justify-content: center;
-  margin-top: 70px;
+  margin-top: 80px;
 }
 
 .feed-container {
+  width: 700px;
+  margin-bottom: 10px;
 }
 
 .feed-header {
   display: flex;
+  flex-direction: row;
   align-items: center;
+  justify-content: space-between;
 }
 
-.img-frame {
-  height: 600px;
+.profile {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
 }
 
 .feed-img {
+  height: 500px;
+}
+
+.image-wrapper {
   width: 100%;
   height: 100%;
 }
 
 .feed-menu {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }
 
-.feed-comments {
+.padding-10 {
+  padding: 10px;
+}
+
+.feed-comment-write {
+  display: flex;
+  flex-direction: row;
+}
+
+.comment-write-input {
+  flex: 1;
+}
+
+.comment-name {
+  font-weight: bold;
+  margin-right: 10px;
 }
