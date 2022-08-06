@@ -1,0 +1,22 @@
+{
+  "comments": [
+    {
+      "id": 1,
+      "userName": "weCode",
+      "content": "Welcome to bootcamp!",
+      "isLiked": true
+    },
+    {
+      "id": 2,
+      "userName": "justCode",
+      "content": "Hey!",
+      "isLiked": false
+    },
+    {
+      "id": 3,
+      "userName": "hiCode",
+      "content": "Hi!",
+      "isLiked": false
+    }
+  ]
+}

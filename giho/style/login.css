@@ -1,0 +1,49 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.jgr {
+  text-align: center;
+  font-family: "Lobster", cursive;
+  font-size: 50px;
+  margin: 30px;
+}
+
+.login-box {
+  text-align: center;
+  padding: 3px;
+}
+
+input {
+  background-color: #fafafa;
+  margin: 2px;
+  padding: 9px 0px 7px 8px;
+  width: 250px;
+  border: 1px solid rgb(38, 38, 38);
+  border-radius: 5px;
+}
+
+#login-btn {
+  color: white;
+  background-color: skyblue;
+  margin: 8px 40px;
+  padding: 7px;
+  width: 268px;
+  border-radius: 5px;
+  border: none;
+}
+
+.fp {
+  text-align: center;
+  color: rgb(0, 55, 107);
+  margin-top: 70px;
+  margin-bottom: 10px;
+  font-size: small;
+}
+
+.all {
+  margin: 10px;
+  border: 1px solid rgb(219, 219, 219);
+}
