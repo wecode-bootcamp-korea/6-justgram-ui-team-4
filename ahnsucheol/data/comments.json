@@ -1,0 +1,62 @@
+[
+  [
+    {
+      "commentNum": 1,
+      "commenterName": "JUSTCODE",
+      "commentContent": "It's time to JUSTCODE",
+      "isLiked": true
+    },
+    {
+      "commentNum": 2,
+      "commenterName": "code Kim",
+      "commentContent": "Hi there.",
+      "isLiked": false
+    },
+    {
+      "commentNum": 3,
+      "commenterName": "jayPark",
+      "commentContent": "Hey.",
+      "isLiked": false
+    }
+  ],
+  [
+    {
+      "commentNum": 1,
+      "commenterName": "WECODE",
+      "commentContent": "It's time to WECODE",
+      "isLiked": true
+    },
+    {
+      "commentNum": 2,
+      "commenterName": "code Ahn",
+      "commentContent": "Hello there.",
+      "isLiked": false
+    },
+    {
+      "commentNum": 3,
+      "commenterName": "JYP",
+      "commentContent": "What's up?",
+      "isLiked": false
+    }
+  ],
+  [
+    {
+      "commentNum": 1,
+      "commenterName": "WEJUSTCODE",
+      "commentContent": "It's time to WEJUSTCODE",
+      "isLiked": true
+    },
+    {
+      "commentNum": 2,
+      "commenterName": "CODE AHN",
+      "commentContent": "HEllO.",
+      "isLiked": false
+    },
+    {
+      "commentNum": 3,
+      "commenterName": "SM",
+      "commentContent": "WHAT's up?",
+      "isLiked": false
+    }
+  ]
+]

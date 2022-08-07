@@ -1,0 +1,23 @@
+[
+  [
+    {
+      "profileImg": "image/profile1-img.png",
+      "profileId": "Sucheol9773",
+      "feedImg": "image/feed1-img.png"
+    }
+  ],
+  [
+    {
+      "profileImg": "./image/profile1-img.png",
+      "profileId": "Sucheol",
+      "feedImg": "image/feed1-img.png"
+    }
+  ],
+  [
+    {
+      "profileImg": "./image/profile1-img.png",
+      "profileId": "Sucheol0703",
+      "feedImg": "image/feed1-img.png"
+    }
+  ]
+]

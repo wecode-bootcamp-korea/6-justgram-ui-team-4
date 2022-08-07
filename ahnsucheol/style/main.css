@@ -1,0 +1,123 @@
+.vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+.header-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 200px;
+}
+
+.logo-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo-img {
+  width: 36px;
+  height: 36px;
+}
+
+.logo-text {
+  font-family: "Lobster", cursive;
+  font-size: 36px;
+}
+
+.custom-margin-left {
+  margin-left: 10px;
+}
+
+.feed-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+  background-color: rgb(245, 245, 245);
+}
+
+.feed-wrapper {
+  background-color: white;
+}
+
+.profile-img {
+  width: 36px;
+  height: 36px;
+  border-radius: 70%;
+  margin-right: 5px;
+}
+
+.profile-id {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+
+.profile-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.feed-img {
+  width: 100%;
+}
+
+.menu-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+
+.total-likes {
+  margin: 5px 0 10px 5px;
+}
+
+.total-comments {
+  margin-left: 5px;
+}
+
+.commenter-content {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.comment-ul {
+  list-style: none;
+}
+
+.minutes-ago {
+  padding-top: 10px;
+  padding-left: 5px;
+  color: gray;
+  font-size: 15px;
+}
+
+.hr-margin {
+  margin-bottom: 0;
+}
+
+.comment-input {
+  border: none;
+  flex: 1;
+}
+
+.comment-input-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.comment-btn {
+  border: none;
+  background-color: white;
+  color: lightblue;
+  cursor: pointer;
+}

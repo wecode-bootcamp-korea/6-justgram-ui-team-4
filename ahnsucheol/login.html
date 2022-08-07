@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Justgram login page</title>
+
+    <!-- css 적용 -->
+    <link rel="stylesheet" href="style/login.css" />
+    <link rel="stylesheet" href="style/common.css" />
+    <!-- 폰트 적용 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="flex-center">
+    <div class="login-container border">
+      <div class="logo-wrapper flex-center">
+        <span class="logo-text">Justgram</span>
+      </div>
+      <form class="form-container">
+        <div class="form-container">
+          <div class="flex-center input-wrapper">
+            <input
+              type="text"
+              id="login-id"
+              class="login-input border"
+              placeholder="전화번호, 사용자 이름 또는 이메일"
+            />
+          </div>
+          <div class="flex-center input-wrapper">
+            <input
+              type="password"
+              id="login-pw"
+              class="login-input border"
+              placeholder="비밀번호"
+            />
+          </div>
+          <div class="flex-center btn-wrapper">
+            <button type="button" disabled="disabled" class="login-btn border">
+              로그인
+            </button>
+          </div>
+        </div>
+      </form>
+
+      <div class="flex-center">
+        <a class="find-pw">비밀번호를 잊으셨나요?</a>
+      </div>
+    </div>
+
+    <script src="js/login.js"></script>
+  </body>
+</html>
