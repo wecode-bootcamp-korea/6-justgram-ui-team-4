@@ -33,7 +33,7 @@ for (let i = 0; i < commentBtn.length; i++) {
     const userName = "sh.inv";
     const newDiv = document.createElement("div");
 
-    newDiv.classList.add("add-comment");
+    newDiv.className = 'add-comment';
 
     newDiv.innerHTML = `
       <span>
@@ -50,3 +50,24 @@ for (let i = 0; i < commentBtn.length; i++) {
     activeBtn();
   });
 }
+
+// fetch 함수를 통해 json 데이터를 가져와 댓글단 유저와 댓글 값을 가져옴.
+fetch('data/comment.json')
+.then(res => res.json())
+.then(data => {
+  data.forEach(object => {
+    const newDiv = document.createElement('div');
+    const tagAreaIndex = document.getElementsByClassName("comment")[0];
+    newDiv.className = 'add-comment';
+
+    newDiv.innerHTML = `
+    <span>
+    <a href="">${object.user}</a>
+    <span>${object.content}</span>
+  </span>
+  <button><img src="img/main_img/img/heart.png"></button>
+    `;
+
+    tagAreaIndex.appendChild(newDiv);
+  });
+})

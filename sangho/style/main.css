@@ -67,6 +67,7 @@ header {
 }
 
 /* --------------------게시글-------------------- */
+
 .post-box {
   display: flex;
   flex-direction: column;

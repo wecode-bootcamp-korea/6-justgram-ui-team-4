@@ -1,0 +1,17 @@
+[
+  {
+    "user": "justcode",
+    "content": "저스트 코드 6기",
+    "isLiked": true
+  },
+  {
+    "user": "wecode",
+    "content": "위코드입니다.",
+    "isLiked": true
+  },
+  {
+    "user": "bootcamp",
+    "content": "저스트 코드 부트캠프",
+    "isLiked": false
+  }
+]
